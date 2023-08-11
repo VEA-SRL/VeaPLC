@@ -71,18 +71,19 @@ def GetAboutDialogInfo():
     import wx
     info = wx.AboutDialogInfo()
 
-    info.Name = "OpenPLC Editor"
+    info.Name = "VeaPLC Editor"
     info.Version = app_version
 
     info.Copyright = ""
-    info.Copyright += "(C) 2019 Thiago Alves"
+    info.Copyright += "(C) 2023 VEA SRL"
 
-    info.WebSite = ("http://www.openplcproject.com", "openplcproject.com")
+    info.WebSite = ("http://www.vea.it", "vea.it")
 
     info.Description = _("Open Source IDE for the OpenPLC Runtime, compliant with "
-                         "the IEC 61131-3 international standard.\n\nBased on PLCOpen Editor and Beremiz by Andrey Skvortsov, Sergey Surkov, Edouard Tisserant and Laurent Bessard.")
+                         "the IEC 61131-3 international standard.\n\nBased on OpenPLC Editor and Beremiz by Andrey Skvortsov, Sergey Surkov, Edouard Tisserant and Laurent Bessard.")
 
     info.Developers = (
+        "VEA SRL <vea@vea.it>",
         "Thiago Alves <thiagoralves@gmail.com>",
         "Andrey Skvortsov <andrej.skvortzov@gmail.com>",
         "Sergey Surkov <surkov.sv@summatechnology.ru>",
@@ -212,8 +213,8 @@ def GetAboutDialogInfo():
     return info
 
 
-app_version = "2.01"
+app_version = "1.0"
 #rev = GetAppRevision()
-rev = "Release: 2023-08-07"
+rev = "Release: 2023-08-11"
 if rev is not None:
     app_version = app_version + "\n" + rev.rstrip()

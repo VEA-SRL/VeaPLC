@@ -129,76 +129,76 @@ class ArduinoUploadDialog(wx.Dialog):
             self.m_listbook2.SetPageImage( m_listbook2Index, m_listbook2Index )
             m_listbook2Index += 1
 
-        self.m_panel6 = wx.Panel( self.m_listbook2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-        bSizer3 = wx.BoxSizer( wx.VERTICAL )
+        # self.m_panel6 = wx.Panel( self.m_listbook2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        # bSizer3 = wx.BoxSizer( wx.VERTICAL )
 
-        self.m_staticText4 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"This setting will allow you to change the default pin mapping for your board. Please be cautious while edditing, as mistakes can lead to compilation errors. Pin numbers should obey the Arduino notation for your board and must be comma-separated.", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText4.Wrap( 530 )
-        self.m_staticText4.SetMinSize( wx.Size( -1,60 ) )
+        # self.m_staticText4 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"This setting will allow you to change the default pin mapping for your board. Please be cautious while edditing, as mistakes can lead to compilation errors. Pin numbers should obey the Arduino notation for your board and must be comma-separated.", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText4.Wrap( 530 )
+        # self.m_staticText4.SetMinSize( wx.Size( -1,60 ) )
 
-        bSizer3.Add( self.m_staticText4, 0, wx.ALL, 5 )
+        # bSizer3.Add( self.m_staticText4, 0, wx.ALL, 5 )
 
-        self.m_staticText5 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Digital Inputs", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText5.Wrap( -1 )
-        bSizer3.Add( self.m_staticText5, 0, wx.ALL, 5 )
+        # self.m_staticText5 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Digital Inputs", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText5.Wrap( -1 )
+        # bSizer3.Add( self.m_staticText5, 0, wx.ALL, 5 )
 
-        self.din_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        bSizer3.Add( self.din_txt, 0, wx.ALL|wx.EXPAND, 5 )
+        # self.din_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        # bSizer3.Add( self.din_txt, 0, wx.ALL|wx.EXPAND, 5 )
 
-        self.m_staticText6 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Digital Outputs", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText6.Wrap( -1 )
-        bSizer3.Add( self.m_staticText6, 0, wx.ALL, 5 )
+        # self.m_staticText6 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Digital Outputs", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText6.Wrap( -1 )
+        # bSizer3.Add( self.m_staticText6, 0, wx.ALL, 5 )
 
-        self.dout_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        bSizer3.Add( self.dout_txt, 0, wx.ALL|wx.EXPAND, 5 )
+        # self.dout_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        # bSizer3.Add( self.dout_txt, 0, wx.ALL|wx.EXPAND, 5 )
 
-        self.m_staticText7 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Analog Inputs", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText7.Wrap( -1 )
-        bSizer3.Add( self.m_staticText7, 0, wx.ALL, 5 )
+        # self.m_staticText7 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Analog Inputs", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText7.Wrap( -1 )
+        # bSizer3.Add( self.m_staticText7, 0, wx.ALL, 5 )
 
-        self.ain_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        bSizer3.Add( self.ain_txt, 0, wx.ALL|wx.EXPAND, 5 )
+        # self.ain_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        # bSizer3.Add( self.ain_txt, 0, wx.ALL|wx.EXPAND, 5 )
 
-        self.m_staticText8 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Analog Outputs", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText8.Wrap( -1 )
-        bSizer3.Add( self.m_staticText8, 0, wx.ALL, 5 )
+        # self.m_staticText8 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Analog Outputs", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText8.Wrap( -1 )
+        # bSizer3.Add( self.m_staticText8, 0, wx.ALL, 5 )
 
-        self.aout_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        bSizer3.Add( self.aout_txt, 0, wx.ALL|wx.EXPAND, 5 )
+        # self.aout_txt = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        # bSizer3.Add( self.aout_txt, 0, wx.ALL|wx.EXPAND, 5 )
 
-        self.m_staticText9 = wx.StaticText( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_staticText9.Wrap( -1 )
-        self.m_staticText9.SetMinSize( wx.Size( -1,40 ) )
+        # self.m_staticText9 = wx.StaticText( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_staticText9.Wrap( -1 )
+        # self.m_staticText9.SetMinSize( wx.Size( -1,40 ) )
 
-        bSizer3.Add( self.m_staticText9, 0, wx.ALL, 5 )
+        # bSizer3.Add( self.m_staticText9, 0, wx.ALL, 5 )
 
-        gSizer1 = wx.GridSizer( 0, 2, 0, 0 )
+        # gSizer1 = wx.GridSizer( 0, 2, 0, 0 )
 
-        self.m_button2 = wx.Button( self.m_panel6, wx.ID_ANY, u"Restore Defaults", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_button2.SetMinSize( wx.Size( 150,30 ) )
-        self.m_button2.Bind(wx.EVT_BUTTON, self.restoreIODefaults)
+        # self.m_button2 = wx.Button( self.m_panel6, wx.ID_ANY, u"Restore Defaults", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_button2.SetMinSize( wx.Size( 150,30 ) )
+        # self.m_button2.Bind(wx.EVT_BUTTON, self.restoreIODefaults)
 
-        gSizer1.Add( self.m_button2, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
+        # gSizer1.Add( self.m_button2, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
 
-        self.m_button3 = wx.Button( self.m_panel6, wx.ID_ANY, u"Save Changes", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.m_button3.SetMinSize( wx.Size( 150,30 ) )
-        self.m_button3.Bind(wx.EVT_BUTTON, self.saveIO)
+        # self.m_button3 = wx.Button( self.m_panel6, wx.ID_ANY, u"Save Changes", wx.DefaultPosition, wx.DefaultSize, 0 )
+        # self.m_button3.SetMinSize( wx.Size( 150,30 ) )
+        # self.m_button3.Bind(wx.EVT_BUTTON, self.saveIO)
 
-        gSizer1.Add( self.m_button3, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
-
-
-        bSizer3.Add( gSizer1, 1, wx.EXPAND, 5 )
+        # gSizer1.Add( self.m_button3, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
 
 
-        self.m_panel6.SetSizer( bSizer3 )
-        self.m_panel6.Layout()
-        bSizer3.Fit( self.m_panel6 )
-        self.m_listbook2.AddPage( self.m_panel6, u"I/O Config", False )
-        m_listbook2Bitmap = wx.Bitmap(os.path.join(current_dir, "..", "images", "io.png"), wx.BITMAP_TYPE_ANY )
-        if ( m_listbook2Bitmap.Ok() ):
-            m_listbook2Images.Add( m_listbook2Bitmap )
-            self.m_listbook2.SetPageImage( m_listbook2Index, m_listbook2Index )
-            m_listbook2Index += 1
+        # bSizer3.Add( gSizer1, 1, wx.EXPAND, 5 )
+
+
+        # self.m_panel6.SetSizer( bSizer3 )
+        # self.m_panel6.Layout()
+        # bSizer3.Fit( self.m_panel6 )
+        # self.m_listbook2.AddPage( self.m_panel6, u"I/O Config", False )
+        # m_listbook2Bitmap = wx.Bitmap(os.path.join(current_dir, "..", "images", "io.png"), wx.BITMAP_TYPE_ANY )
+        # if ( m_listbook2Bitmap.Ok() ):
+        #     m_listbook2Images.Add( m_listbook2Bitmap )
+        #     self.m_listbook2.SetPageImage( m_listbook2Index, m_listbook2Index )
+        #     m_listbook2Index += 1
 
         self.m_panel7 = wx.Panel( self.m_listbook2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         bSizer4 = wx.BoxSizer( wx.VERTICAL )
@@ -285,8 +285,9 @@ class ArduinoUploadDialog(wx.Dialog):
 
         fgSizer3.Add( self.m_staticText14, 0, wx.ALL, 5 )
 
-        tcp_iface_comboChoices = [ u"Ethernet", u"WiFi" ]
-        self.tcp_iface_combo = wx.ComboBox( self.m_panel7, wx.ID_ANY, u"Ethernet", wx.DefaultPosition, wx.DefaultSize, tcp_iface_comboChoices, wx.CB_READONLY )
+        # tcp_iface_comboChoices = [ u"Ethernet", u"WiFi" ]
+        tcp_iface_comboChoices = [ u"WiFi" ]
+        self.tcp_iface_combo = wx.ComboBox( self.m_panel7, wx.ID_ANY, u"WiFi", wx.DefaultPosition, wx.DefaultSize, tcp_iface_comboChoices, wx.CB_READONLY )
         self.tcp_iface_combo.SetSelection( 0 )
         self.tcp_iface_combo.SetMinSize( wx.Size( 440,-1 ) )
         self.tcp_iface_combo.Bind(wx.EVT_COMBOBOX, self.onUIChange)
@@ -479,10 +480,10 @@ class ArduinoUploadDialog(wx.Dialog):
         board_dout = self.hals[board_type]['user_dout']
         board_aout = self.hals[board_type]['user_aout']
         
-        self.din_txt.SetValue(str(board_din))
-        self.ain_txt.SetValue(str(board_ain))
-        self.dout_txt.SetValue(str(board_dout))
-        self.aout_txt.SetValue(str(board_aout))
+        # self.din_txt.SetValue(str(board_din))
+        # self.ain_txt.SetValue(str(board_ain))
+        # self.dout_txt.SetValue(str(board_dout))
+        # self.aout_txt.SetValue(str(board_aout))
 
     def restoreIODefaults(self, event):
         board_type = self.board_type_combo.GetValue().split(" [")[0] #remove the trailing [version] on board name
@@ -532,6 +533,11 @@ class ArduinoUploadDialog(wx.Dialog):
         builder_thread.start()
     
     def generateDefinitionsFile(self):
+        board_type = self.board_type_combo.GetValue().split(" [")[0] #remove the trailing [version] on board name
+        board_din = self.hals[board_type]['user_din']
+        board_ain = self.hals[board_type]['user_ain']
+        board_dout = self.hals[board_type]['user_dout']
+        board_aout = self.hals[board_type]['user_aout']
         #Generate Communication Config defines
         define_file = '//Comms configurations\n'
 
@@ -563,14 +569,14 @@ class ArduinoUploadDialog(wx.Dialog):
 
         #Generate IO Config defines
         define_file += '\n\n//IO Config\n'
-        define_file += '#define PINMASK_DIN ' + str(self.din_txt.GetValue()) + '\n'
-        define_file += '#define PINMASK_AIN ' + str(self.ain_txt.GetValue()) + '\n'
-        define_file += '#define PINMASK_DOUT ' + str(self.dout_txt.GetValue()) + '\n'
-        define_file += '#define PINMASK_AOUT ' + str(self.aout_txt.GetValue()) + '\n'
-        define_file += '#define NUM_DISCRETE_INPUT ' + str(len(str(self.din_txt.GetValue()).split(','))) + '\n'
-        define_file += '#define NUM_ANALOG_INPUT ' + str(len(str(self.ain_txt.GetValue()).split(','))) + '\n'
-        define_file += '#define NUM_DISCRETE_OUTPUT ' + str(len(str(self.dout_txt.GetValue()).split(','))) + '\n'
-        define_file += '#define NUM_ANALOG_OUTPUT ' + str(len(str(self.aout_txt.GetValue()).split(','))) + '\n'
+        define_file += '#define PINMASK_DIN ' + board_din + '\n'
+        define_file += '#define PINMASK_AIN ' + board_ain + '\n'
+        define_file += '#define PINMASK_DOUT ' + board_dout + '\n'
+        define_file += '#define PINMASK_AOUT ' + board_aout+ '\n'
+        define_file += '#define NUM_DISCRETE_INPUT ' + str(len(board_din.split(','))) + '\n'
+        define_file += '#define NUM_ANALOG_INPUT ' + str(len(board_ain.split(','))) + '\n'
+        define_file += '#define NUM_DISCRETE_OUTPUT ' + str(len(board_dout.split(','))) + '\n'
+        define_file += '#define NUM_ANALOG_OUTPUT ' + str(len(board_aout.split(','))) + '\n'
         
         # Get define from hals
         board_type = self.board_type_combo.GetValue().split(" [")[0]

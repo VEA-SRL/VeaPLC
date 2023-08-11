@@ -36,6 +36,7 @@ from wx.lib.agw.advancedsplash import AdvancedSplash, AS_NOTIMEOUT, AS_CENTER_ON
 import util.paths as paths
 
 
+
 class BeremizIDELauncher(object):
     def __init__(self):
         self.app = None
@@ -47,6 +48,7 @@ class BeremizIDELauncher(object):
         self.buildpath = None
         self.splash = None
         self.splashPath = self.Bpath("images", "splash.png")
+        # print(self.splashPath)
         self.modules = ["BeremizIDE"]
         self.debug = os.path.exists("BEREMIZ_DEBUG")
         self.handle_exception = None
@@ -73,8 +75,8 @@ class BeremizIDELauncher(object):
         if o in ("-h", "--help"):
             self.Usage()
             sys.exit()
-        if o in ("-u", "--updatecheck"):
-            self.updateinfo_url = a
+        # if o in ("-u", "--updatecheck"):
+        #     self.updateinfo_url = a
         if o in ("-e", "--extend"):
             self.extensions.append(a)
 
@@ -131,7 +133,7 @@ class BeremizIDELauncher(object):
 
     def BackgroundInitialization(self):
         self.InitI18n()
-        self.CheckUpdates()
+        # self.CheckUpdates()
         self.LoadExtensions()
         self.ImportModules()
 
@@ -156,23 +158,23 @@ class BeremizIDELauncher(object):
             AddBitmapFolder(os.path.join(extension_folder, "images"))
             execfile(extfilename, self.globals())
 
-    def CheckUpdates(self):
-        if self.updateinfo_url is not None:
-            self.updateinfo = _("Fetching %s") % self.updateinfo_url
+    # def CheckUpdates(self):
+    #     if self.updateinfo_url is not None:
+    #         self.updateinfo = _("Fetching %s") % self.updateinfo_url
 
-            def updateinfoproc():
-                try:
-                    import urllib2
-                    self.updateinfo = urllib2.urlopen(self.updateinfo_url, None).read()
-                except Exception:
-                    self.updateinfo = _("update info unavailable.")
+    #         def updateinfoproc():
+    #             try:
+    #                 import urllib2
+    #                 self.updateinfo = urllib2.urlopen(self.updateinfo_url, None).read()
+    #             except Exception:
+    #                 self.updateinfo = _("update info unavailable.")
 
-            from threading import Thread
-            self.splash.SetText(text=self.updateinfo)
-            updateinfoThread = Thread(target=updateinfoproc)
-            updateinfoThread.start()
-            updateinfoThread.join(2)
-            self.splash.SetText(text=self.updateinfo)
+    #         from threading import Thread
+    #         self.splash.SetText(text=self.updateinfo)
+    #         updateinfoThread = Thread(target=updateinfoproc)
+    #         updateinfoThread.start()
+    #         updateinfoThread.join(2)
+    #         self.splash.SetText(text=self.updateinfo)
 
     def ImportModules(self):
         for modname in self.modules:

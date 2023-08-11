@@ -298,9 +298,9 @@ class Beremiz(IDEFrame):
                    kind=wx.ITEM_NORMAL, text=_(u'Print') + '\tCTRL+P')
         parent.AppendSeparator()
         id_update = wx.NewId()
-        AppendMenu(parent, help='', id=ID_OPENPLCFILEMENUUPDATE,
-                   kind=wx.ITEM_NORMAL, text=_(u'Check for updates...') + '\tCTRL+U')
-        parent.AppendSeparator()
+        # AppendMenu(parent, help='', id=ID_OPENPLCFILEMENUUPDATE,
+        #            kind=wx.ITEM_NORMAL, text=_(u'Check for updates...') + '\tCTRL+U')
+        # parent.AppendSeparator()
         AppendMenu(parent, help='', id=wx.ID_EXIT,
                    kind=wx.ITEM_NORMAL, text=_(u'Quit') + '\tCTRL+Q')
 
@@ -343,8 +343,8 @@ class Beremiz(IDEFrame):
                 _(u'Community support'),
                 wx.OK | wx.ICON_INFORMATION)
 
-        item = parent.Append(wx.ID_ANY, _(u'Community support'), '')
-        self.Bind(wx.EVT_MENU, handler, item)
+        # item = parent.Append(wx.ID_ANY, _(u'Community support'), '')
+        # self.Bind(wx.EVT_MENU, handler, item)
 
         parent.Append(help='', id=wx.ID_ABOUT,
                       kind=wx.ITEM_NORMAL, text=_(u'About'))
@@ -452,7 +452,8 @@ class Beremiz(IDEFrame):
 
     def __init__(self, parent, projectOpen=None, buildpath=None, ctr=None, debug=True):
         # Add beremiz's icon in top left corner of the frame
-        self.icon = wx.Icon(Bpath("images", "brz.ico"), wx.BITMAP_TYPE_ICO)
+        # self.icon = wx.Icon(Bpath("images", "brz.ico"), wx.BITMAP_TYPE_ICO)
+        self.icon = wx.Icon(Bpath("images", "logo.ico"), wx.BITMAP_TYPE_ICO)
         self.__init_execute_path()
 
         IDEFrame.__init__(self, parent, debug)

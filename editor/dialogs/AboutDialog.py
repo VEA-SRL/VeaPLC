@@ -71,19 +71,19 @@ class AboutDialog(wx.Dialog):
         if os.name == 'nt':
             credits = wx.Button(self, id=wx.ID_ABOUT, label=_("C&redits"))
             license = wx.Button(self, label=_("&License"))
-            sponsors = wx.Button(self, label=("&Sponsors"))
+            # sponsors = wx.Button(self, label=("&Sponsors"))
             close = wx.Button(self, id=wx.ID_CANCEL, label=_("&Close"))
         else:
             #Linux buttons must be a little bit bigger
             credits = wx.Button(self, id=wx.ID_ABOUT, label=_("C&redits"), size = wx.Size( -1,50 ))
             license = wx.Button(self, label=_("&License"), size = wx.Size( -1,50 ))
-            sponsors = wx.Button(self, label=("&Sponsors"), size = wx.Size( -1,50 ))
+            # sponsors = wx.Button(self, label=("&Sponsors"), size = wx.Size( -1,50 ))
             close = wx.Button(self, id=wx.ID_CANCEL, label=_("&Close"), size = wx.Size( -1,50 ))
         
         btnSizer = wx.BoxSizer(wx.HORIZONTAL)
         btnSizer.Add(credits, flag=wx.CENTER | wx.LEFT | wx.RIGHT, border=5)
         btnSizer.Add(license, flag=wx.CENTER | wx.RIGHT, border=5)
-        btnSizer.Add(sponsors, flag=wx.CENTER | wx.RIGHT, border=5)
+        # btnSizer.Add(sponsors, flag=wx.CENTER | wx.RIGHT, border=5)
         btnSizer.Add(close, flag=wx.CENTER | wx.RIGHT, border=5)
 
         sizer = wx.BoxSizer(wx.VERTICAL)
@@ -106,7 +106,7 @@ class AboutDialog(wx.Dialog):
 
         credits.Bind(wx.EVT_BUTTON, self.on_credits)
         license.Bind(wx.EVT_BUTTON, self.on_license)
-        sponsors.Bind(wx.EVT_BUTTON, self.on_sponsors)
+        # sponsors.Bind(wx.EVT_BUTTON, self.on_sponsors)
         close.Bind(wx.EVT_BUTTON, lambda evt: self.Destroy())
 
     def on_license(self, event):
@@ -115,8 +115,8 @@ class AboutDialog(wx.Dialog):
     def on_credits(self, event):
         CreditsDialog(self, self.info)
     
-    def on_sponsors(self, event):
-        SponsorsDialog(self)
+    # def on_sponsors(self, event):
+    #     SponsorsDialog(self)
 
 
 class CreditsDialog(wx.Dialog):
