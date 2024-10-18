@@ -1,1 +1,0 @@
-{"baud": "115200", "subnet": "255.255.255.0", "com_port": "COM1", "mb_serial": false, "last_update": 1691840395.394, "ip": "", "pwd": "", "slaveid": "0", "mac": "0xDE, 0xAD, 0xBE, 0xEF, 0xDE, 0xAD", "gateway": "", "dns": "", "tcp_iface": "WiFi", "ssid": "", "mb_tcp": true, "txpin": "-1", "board_type": "Iruino VEA [1.0]", "serial_iface": "Serial"}

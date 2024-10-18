@@ -157,3 +157,6 @@ editor/arduino/src/POUS.c
 editor/arduino/src/POUS.h
 editor/arduino/src/Res0.c
 editor/arduino/src/VARIABLES.csv
+APP/editor/arduino/examples/Baremetal/settings.json
+installerWindows/VeaPLCSetup_1.0.exe
+installerWindows/VeaPLCSetup_1.1.exe
