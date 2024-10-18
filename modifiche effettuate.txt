@@ -6,4 +6,4 @@
 -lasciato solo possibilità di programmare Iruino
 -tolta possibilità di modificare ingressi e uscite
 -tolta possibilità di modbus su Ethernet
--tolto bottone sponsor in about
+-tolto bottone sponsor in about 
