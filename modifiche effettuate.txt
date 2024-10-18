@@ -1,9 +1,0 @@
--modificate icone programma
--modificato splashScreen
--tolto possibilità di aggiornamento
--tolto community dall'help
--modificato about programma, messo riferimenti VEA
--lasciato solo possibilità di programmare Iruino
--tolta possibilità di modificare ingressi e uscite
--tolta possibilità di modbus su Ethernet
--tolto bottone sponsor in about 
